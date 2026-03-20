@@ -1,5 +1,3 @@
-import type { Player } from '@/entities/Player';
-
 export interface IAbility {
   readonly id: string;
   readonly staminaCost: number;
