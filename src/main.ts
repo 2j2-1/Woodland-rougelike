@@ -42,12 +42,9 @@ const config: Phaser.Types.Core.GameConfig = {
     },
   },
   scale: {
-    mode: Phaser.Scale.FIT,
+    mode: Phaser.Scale.RESIZE,
     autoCenter: Phaser.Scale.CENTER_BOTH,
     parent: document.body,
-    // Ensure the canvas shrinks to fit small mobile screens
-    // without ever exceeding the native game resolution.
-    expandParent: false,
   },
   audio: {
     disableWebAudio: false,
