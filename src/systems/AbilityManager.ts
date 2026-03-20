@@ -4,12 +4,9 @@ import type { IAbility } from '@/abilities/IAbility';
 type AbilitySlot = 'primary' | 'secondary';
 
 export class AbilityManager {
-  private _player: Player;
   private abilities = new Map<AbilitySlot, IAbility>();
 
-  constructor(player: Player) {
-    this._player = player;
-  }
+  constructor(_player: Player) {}
 
   setAbility(slot: AbilitySlot, ability: IAbility): void {
     this.abilities.set(slot, ability);
