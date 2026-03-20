@@ -1,5 +1,6 @@
 import Phaser from 'phaser';
 import type { GameScene } from '@/scenes/GameScene';
+import { TouchInputState } from '@/systems/TouchInputState';
 
 /** Centralises keyboard + gamepad input to avoid duplicated key checks. */
 export class InputManager {
@@ -52,10 +53,21 @@ export class InputManager {
       if (Math.abs(ly) > this.DEAD_ZONE) y = ly;
     }
 
+    // Touch / virtual joystick (only applied when no keyboard/gamepad input)
+    if (x === 0 && y === 0) {
+      x = TouchInputState.moveX;
+      y = TouchInputState.moveY;
+    }
+
     return new Phaser.Math.Vector2(x, y).normalize();
   }
 
   getAimAngle(): number {
+    // Virtual aim joystick (mobile) takes highest priority
+    if (TouchInputState.hasAim) {
+      return TouchInputState.aimAngle;
+    }
+
     if (this.gamepad) {
       const rx = this.gamepad.rightStick.x;
       const ry = this.gamepad.rightStick.y;
@@ -74,9 +86,12 @@ export class InputManager {
   isActionJustPressed(action: 'DASH' | 'SECONDARY' | 'INTERACT' | 'PAUSE'): boolean {
     switch (action) {
       case 'DASH':      return Phaser.Input.Keyboard.JustDown(this.keys['SPACE']!) ||
-                               (this.gamepad?.A === true);
-      case 'SECONDARY': return Phaser.Input.Keyboard.JustDown(this.keys['Q']!);
-      case 'INTERACT':  return Phaser.Input.Keyboard.JustDown(this.keys['E']!);
+                               (this.gamepad?.A === true) ||
+                               TouchInputState.consumeDash();
+      case 'SECONDARY': return Phaser.Input.Keyboard.JustDown(this.keys['Q']!) ||
+                               TouchInputState.consumeSecondary();
+      case 'INTERACT':  return Phaser.Input.Keyboard.JustDown(this.keys['E']!) ||
+                               TouchInputState.consumeInteract();
       case 'PAUSE':     return Phaser.Input.Keyboard.JustDown(this.keys['ESC']!);
     }
   }

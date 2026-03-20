@@ -7,6 +7,8 @@ import { SkillTreeUI } from '@/ui/SkillTreeUI';
 import { PrestigeAltarUI } from '@/ui/PrestigeAltarUI';
 import { DialogueBox } from '@/ui/DialogueBox';
 import { HelpUI } from '@/ui/HelpUI';
+import { MobileControls } from '@/ui/MobileControls';
+import { TouchInputState } from '@/systems/TouchInputState';
 import type { RunGraph } from '@/systems/RunGraph';
 import type { DialogueNode } from '@/types/content';
 
@@ -31,6 +33,7 @@ export class UIScene extends Phaser.Scene {
   private helpUI!: HelpUI;
   private isPaused = false;
   private pauseContainer?: Phaser.GameObjects.Container;
+  private mobileControls?: MobileControls;
 
   // Cached HUD values
   private hp = 100;
@@ -76,6 +79,11 @@ export class UIScene extends Phaser.Scene {
 
     this.wireEvents();
     this.registerInputs();
+
+    // Mount mobile controls on touch devices
+    if (this.sys.game.device.input.touch) {
+      this.mobileControls = new MobileControls(this);
+    }
 
     // Handle mode passed at launch time
     const mode = data?.mode ?? 'hud';
@@ -161,6 +169,7 @@ export class UIScene extends Phaser.Scene {
   }
 
   shutdown(): void {
+    this.mobileControls?.destroy();
     EventBus.off(GameEvents.PLAYER_DAMAGED,         this._onDamaged);
     EventBus.off(GameEvents.PLAYER_HEALED,          this._onHealed);
     EventBus.off(GameEvents.PLAYER_STAMINA_CHANGED, this._onStamina);
@@ -245,5 +254,9 @@ export class UIScene extends Phaser.Scene {
 
   update(): void {
     this.minimap.update();
+    // Bridge mobile pause button → pause logic
+    if (TouchInputState.consumePause()) {
+      this.togglePause();
+    }
   }
 }
