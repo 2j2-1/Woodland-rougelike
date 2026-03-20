@@ -68,6 +68,7 @@ export class AudioManager {
     this.sfxPool.forEach(h => h.volume(v));
   }
 
+  static setMasterVolume(v: number): void { Howler.volume(v); }
   static getSfxVolume(): number { return this.sfxVolume; }
   static getMasterVolume(): number { return Howler.volume(); }
 }

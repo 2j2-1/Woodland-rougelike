@@ -14,11 +14,11 @@ export class LootDropper {
     this.scene = scene;
     this.group = group;
 
-    EventBus.on<{ enemy: Enemy }>(GameEvents.ENEMY_DIED, ({ enemy }) => {
+    EventBus.on(GameEvents.ENEMY_DIED, ({ enemy }: { enemy: Enemy }) => {
       this.dropFromEnemy(enemy);
     });
 
-    EventBus.on<{ amount: number }>(GameEvents.LOOT_COLLECTED, (d) => {
+    EventBus.on(GameEvents.LOOT_COLLECTED, (d: { amount: number }) => {
       CurrencyManager.addRunScraps(d.amount);
     });
   }
