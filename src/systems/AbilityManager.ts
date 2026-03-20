@@ -4,11 +4,11 @@ import type { IAbility } from '@/abilities/IAbility';
 type AbilitySlot = 'primary' | 'secondary';
 
 export class AbilityManager {
-  private player: Player;
+  private _player: Player;
   private abilities = new Map<AbilitySlot, IAbility>();
 
   constructor(player: Player) {
-    this.player = player;
+    this._player = player;
   }
 
   setAbility(slot: AbilitySlot, ability: IAbility): void {
@@ -31,7 +31,4 @@ export class AbilityManager {
     return this.abilities.get(slot)?.remainingCooldown ?? 0;
   }
 
-  void(_player: Player): void {} // suppress unused warning
 }
-
-void AbilityManager.prototype.void;
