@@ -2,23 +2,97 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Mobile: prevent zoom, lock to device width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- iOS web-app meta -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- Android Chrome web-app meta -->
+    <meta name="mobile-web-app-capable" content="yes" />
     <title>Circuit Grove</title>
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
+
+      html {
+        /* Use dynamic viewport height so iOS Safari address bar is excluded */
+        height: -webkit-fill-available;
+      }
+
       body {
         background: #0a0a06;
         display: flex;
         justify-content: center;
         align-items: center;
+        /* Fill the full viewport, accounting for mobile browser chrome */
         width: 100vw;
         height: 100vh;
+        height: 100dvh;
         overflow: hidden;
+        /* Prevent pull-to-refresh and elastic scroll on iOS/Android */
+        overscroll-behavior: none;
+        /* Disable text selection and tap highlights */
+        -webkit-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        /* Prevent browser gesture handling on the whole page */
+        touch-action: none;
+        /* Fixed position ensures the layout never shifts when the
+           virtual keyboard or address bar appears/disappears */
+        position: fixed;
+        inset: 0;
       }
-      canvas { display: block; }
+
+      canvas {
+        display: block;
+        /* Let the canvas receive touch events directly */
+        touch-action: none;
+      }
+
+      /* ── Landscape hint overlay (portrait phones only) ─────────────────── */
+      #rotate-hint {
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        background: #0a0a06;
+        color: #74C69D;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: Georgia, serif;
+        font-size: clamp(14px, 4vw, 22px);
+        text-align: center;
+        gap: 1.5rem;
+        padding: 2rem;
+      }
+
+      #rotate-hint svg {
+        width: clamp(48px, 15vw, 80px);
+        height: auto;
+        animation: spin 2s linear infinite;
+      }
+
+      @keyframes spin {
+        from { transform: rotate(0deg); }
+        to   { transform: rotate(360deg); }
+      }
+
+      /* Show the hint only on portrait mobile screens */
+      @media screen and (orientation: portrait) and (max-width: 900px) {
+        #rotate-hint { display: flex; }
+      }
     </style>
   </head>
   <body>
+    <!-- Shown only when device is in portrait orientation on mobile -->
+    <div id="rotate-hint" aria-live="polite">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#74C69D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="4" y="2" width="10" height="16" rx="2"/>
+        <path d="M17 8l3 3-3 3"/>
+        <line x1="20" y1="11" x2="12" y2="11"/>
+      </svg>
+      <span>Please rotate your device to landscape to play Circuit Grove</span>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
