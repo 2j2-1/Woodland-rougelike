@@ -42,6 +42,7 @@ export class Player extends Phaser.Physics.Arcade.Sprite {
     super(scene, x, y, 'player');
     scene.add.existing(this);
     scene.physics.add.existing(this);
+    this.setDepth(5);
 
     const animalDef = AnimalRegistry.get(animalId);
     const baseStats = animalDef
@@ -108,17 +109,13 @@ export class Player extends Phaser.Physics.Arcade.Sprite {
   private handleMovement(delta: number): void {
     if (this.isDashing) return;
 
+    const scene = this.scene as GameScene;
     const speed = this.statCache[StatType.Speed];
-    let vx = 0;
-    let vy = 0;
 
-    if (this.cursors.left.isDown  || this.wasd.A.isDown) vx = -1;
-    if (this.cursors.right.isDown || this.wasd.D.isDown) vx = 1;
-    if (this.cursors.up.isDown    || this.wasd.W.isDown) vy = -1;
-    if (this.cursors.down.isDown  || this.wasd.S.isDown) vy = 1;
-
-    // Normalise diagonal
-    if (vx !== 0 && vy !== 0) { vx *= 0.707; vy *= 0.707; }
+    // Use InputManager so keyboard, gamepad, and mobile touch all work
+    const vec = scene.inputManager.getMoveVector();
+    let vx = vec.x;
+    let vy = vec.y;
 
     // Isometric vertical feel
     vy *= 0.6;
