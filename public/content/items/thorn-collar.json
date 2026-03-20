@@ -1,0 +1,1 @@
+{ "id": "thorn-collar", "name": "Thorn Collar", "description": "A prickly neck piece. Reflects 4 damage to melee attackers.", "type": "passive", "tier": "green", "weight": 7, "cost": 28, "statModifiers": [{"stat": "defence", "type": "add", "value": 3}], "tags": ["defence", "thorns"] }

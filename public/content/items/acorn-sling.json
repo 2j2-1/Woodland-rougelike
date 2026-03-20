@@ -1,0 +1,1 @@
+{ "id": "acorn-sling", "name": "Acorn Sling", "description": "A trusty sling that fires hardened acorns. Quick to use.", "type": "weapon", "tier": "grey", "weight": 12, "cost": 18, "statModifiers": [{"stat": "attackPower", "type": "add", "value": 5}], "tags": ["ranged", "starter"] }

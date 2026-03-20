@@ -1,0 +1,19 @@
+{
+  "weaponId": "hive-launcher",
+  "name": "Hive Launcher",
+  "description": "Fires a homing poison spore that relentlessly tracks the nearest enemy.",
+  "type": "projectile",
+  "staminaCost": 14,
+  "cooldownMs": 600,
+  "damageMultiplier": 1.2,
+  "projectile": {
+    "speed": 180,
+    "damageType": "poison",
+    "pierceCount": 0,
+    "lifetime": 4000,
+    "scale": 0.9,
+    "tint": 4390912,
+    "homing": true,
+    "homingStrength": 3.0
+  }
+}

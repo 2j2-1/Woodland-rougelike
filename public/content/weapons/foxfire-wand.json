@@ -1,0 +1,19 @@
+{
+  "weaponId": "foxfire-wand",
+  "name": "Foxfire Wand",
+  "description": "Erupts in a short-range spray of foxfire bolts. Devastating up-close but falls off quickly at distance.",
+  "type": "projectile",
+  "staminaCost": 12,
+  "cooldownMs": 450,
+  "damageMultiplier": 0.55,
+  "projectile": {
+    "speed": 340,
+    "damageType": "electric",
+    "pierceCount": 0,
+    "lifetime": 280,
+    "scale": 0.65,
+    "tint": 16750847,
+    "projectileCount": 6,
+    "spreadAngle": 0.9
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "main",
+  "name": "Main Skill Tree",
+  "nodes": [
+    {
+      "id": "quick_feet",
+      "name": "Quick Feet",
+      "description": "+20 movement speed",
+      "requires": [],
+      "cost": 1,
+      "effectId": "quick_feet",
+      "position": { "col": 0, "row": 0 }
+    },
+    {
+      "id": "iron_will",
+      "name": "Iron Will",
+      "description": "+25 Max HP",
+      "requires": [],
+      "cost": 1,
+      "effectId": "iron_will",
+      "position": { "col": 0, "row": 1 }
+    },
+    {
+      "id": "lucky_breaks",
+      "name": "Lucky Breaks",
+      "description": "+10 Luck",
+      "requires": [],
+      "cost": 1,
+      "effectId": "lucky_breaks",
+      "position": { "col": 0, "row": 2 }
+    },
+    {
+      "id": "swift_recovery",
+      "name": "Swift Recovery",
+      "description": "Stamina recharges 25% faster",
+      "requires": ["quick_feet"],
+      "cost": 1,
+      "effectId": "swift_recovery",
+      "position": { "col": 1, "row": 0 }
+    },
+    {
+      "id": "thick_hide",
+      "name": "Thick Hide",
+      "description": "+5 Defence",
+      "requires": ["iron_will"],
+      "cost": 1,
+      "effectId": "thick_hide",
+      "position": { "col": 1, "row": 1 }
+    },
+    {
+      "id": "eagle_eye",
+      "name": "Eagle Eye",
+      "description": "+8 Attack Power",
+      "requires": ["lucky_breaks"],
+      "cost": 1,
+      "effectId": "eagle_eye",
+      "position": { "col": 1, "row": 2 }
+    },
+    {
+      "id": "grove_blessing",
+      "name": "Grove Blessing",
+      "description": "Start each run with 20% bonus HP",
+      "requires": ["swift_recovery", "thick_hide"],
+      "cost": 2,
+      "effectId": "grove_blessing",
+      "position": { "col": 2, "row": 0 }
+    },
+    {
+      "id": "scavenger",
+      "name": "Scavenger",
+      "description": "+25% scrap pickup value",
+      "requires": ["eagle_eye"],
+      "cost": 2,
+      "effectId": "scavenger",
+      "position": { "col": 2, "row": 2 }
+    }
+  ]
+}

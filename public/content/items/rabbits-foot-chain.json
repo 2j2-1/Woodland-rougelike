@@ -1,0 +1,1 @@
+{ "id": "rabbits-foot-chain", "name": "Rabbit's Foot Chain", "description": "A lucky charm. Grants a small chance to dodge projectiles entirely.", "type": "passive", "tier": "gold", "weight": 4, "cost": 50, "statModifiers": [{"stat": "luck", "type": "add", "value": 10}], "tags": ["luck", "dodge"], "pickupEffect": "luck_aura" }

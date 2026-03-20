@@ -1,0 +1,18 @@
+{
+  "weaponId": "void-siphon",
+  "name": "Void Siphon",
+  "description": "A corrupted wand that drains life-force from enemies and returns it to you.",
+  "type": "projectile",
+  "staminaCost": 18,
+  "cooldownMs": 800,
+  "damageMultiplier": 1.4,
+  "projectile": {
+    "speed": 160,
+    "damageType": "fire",
+    "pierceCount": 0,
+    "lifetime": 2500,
+    "scale": 1.0,
+    "tint": 8388736,
+    "lifeSteal": 0.25
+  }
+}

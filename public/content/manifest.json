@@ -1,0 +1,90 @@
+{
+  "items": [
+    "items/acorn-sling.json",
+    "items/briar-whip.json",
+    "items/thunder-talon.json",
+    "items/thorn-launcher.json",
+    "items/foxfire-wand.json",
+    "items/four-leaf-clover.json",
+    "items/bark-vest.json",
+    "items/stolen-keycard.json",
+    "items/acorn-hoard.json",
+    "items/rabbits-foot-chain.json",
+    "items/damp-notebook.json",
+    "items/corporate-lanyard.json",
+    "items/megacorp-hard-hat.json",
+    "items/thorn-collar.json",
+    "items/mud-camouflage.json",
+    "items/salvaged-servo-brace.json",
+    "items/burrow-bomb.json",
+    "items/healing-sap.json",
+    "items/smoke-bomb.json",
+    "items/mushroom-brew.json",
+    "items/running-shoes.json",
+    "items/iron-lung.json",
+    "items/reinforced-heart.json",
+    "items/lucky-paw.json",
+    "items/lifesap-pendant.json",
+    "items/regen-moss.json",
+    "items/multifire-mod.json",
+    "items/homing-chip.json",
+    "items/pierce-rounds.json",
+    "items/dash-capacitor.json"
+  ],
+  "enemies": [
+    "enemies/robo-pheasant-mk1.json",
+    "enemies/badger-bot-3000.json",
+    "enemies/buddy-boss.json",
+    "enemies/forest-drone.json",
+    "enemies/bramble-golem.json",
+    "enemies/shadow-vole.json"
+  ],
+  "weapons": [
+    "weapons/acorn-sling.json",
+    "weapons/thorn-launcher.json",
+    "weapons/foxfire-wand.json",
+    "weapons/storm-coil.json",
+    "weapons/boomerang-blade.json",
+    "weapons/hive-launcher.json",
+    "weapons/void-siphon.json",
+    "weapons/twin-fang.json",
+    "weapons/bramble-burst.json"
+  ],
+  "chips": [
+    "chips/overclock.json",
+    "chips/redundant-core.json",
+    "chips/efficiency.json",
+    "chips/reinforced.json",
+    "chips/nimble.json",
+    "chips/focused.json",
+    "chips/grounded.json",
+    "chips/piercing.json",
+    "chips/momentum.json",
+    "chips/overclock-light.json",
+    "chips/heightened-senses.json",
+    "chips/jury-rig.json",
+    "chips/cascade.json",
+    "chips/overcharged.json",
+    "chips/corporate-takeover.json"
+  ],
+  "animals": [
+    "animals/bunny.json",
+    "animals/hedgehog.json",
+    "animals/toad.json",
+    "animals/badger.json",
+    "animals/owl.json"
+  ],
+  "skillTrees": [
+    "skilltrees/main.json"
+  ],
+  "dialogue": [
+    "dialogue/elderwick.json",
+    "dialogue/humphrey.json"
+  ],
+  "rooms": [
+    "rooms/test-room.json",
+    "rooms/boss-room.json"
+  ],
+  "achievements": "achievements.json",
+  "prestige": "prestige/tracks.json"
+}

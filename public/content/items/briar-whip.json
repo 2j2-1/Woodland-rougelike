@@ -1,0 +1,1 @@
+{ "id": "briar-whip", "name": "Briar Whip", "description": "A thorny whip with extended melee reach and bleed chance.", "type": "weapon", "tier": "green", "weight": 8, "cost": 28, "statModifiers": [{"stat": "attackPower", "type": "add", "value": 8}], "tags": ["melee", "reach"] }

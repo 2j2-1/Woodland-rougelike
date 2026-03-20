@@ -1,0 +1,17 @@
+{
+  "id": "forest-drone",
+  "name": "Forest Drone",
+  "description": "A buzzing surveillance drone that fires electric bolts from a safe distance.",
+  "hp": 25,
+  "defence": 0,
+  "speed": 90,
+  "attackDamage": 12,
+  "attackRange": 220,
+  "detectionRange": 260,
+  "behaviour": "ranged-scout",
+  "lootTable": [
+    { "itemId": "scrap", "chance": 1.0, "count": [4, 9] },
+    { "itemId": "storm-coil", "chance": 0.06, "count": [1, 1] }
+  ],
+  "expValue": 12
+}

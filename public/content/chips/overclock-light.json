@@ -1,0 +1,1 @@
+{ "id": "overclock-light", "name": "Overclock (Lite)", "description": "A safer overclock. +10% attack speed, no heat penalties.", "tier": "grey", "weight": 10, "statModifiers": [{"stat": "attackPower", "type": "multiply", "value": 1.1}], "effectId": null }

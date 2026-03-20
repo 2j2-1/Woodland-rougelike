@@ -1,0 +1,1 @@
+{ "id": "salvaged-servo-brace", "name": "Salvaged Servo-Brace", "description": "MEGACORP scrap repurposed as an arm brace. Increases attack power.", "type": "passive", "tier": "green", "weight": 6, "cost": 32, "statModifiers": [{"stat": "attackPower", "type": "add", "value": 6}, {"stat": "speed", "type": "add", "value": -10}], "tags": ["attack", "megacorp"] }

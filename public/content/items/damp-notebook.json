@@ -1,0 +1,1 @@
+{ "id": "damp-notebook", "name": "Damp Notebook", "description": "Full of half-legible MEGACORP intel. Adds a skill point.", "type": "passive", "tier": "green", "weight": 7, "cost": 30, "statModifiers": [], "tags": ["progression", "lore"], "pickupEffect": "grant_skill_point" }

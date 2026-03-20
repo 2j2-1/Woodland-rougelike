@@ -1,0 +1,1 @@
+{ "id": "bunny", "name": "Pip the Bunny", "description": "A scrappy rabbit with incredible speed and a lucky streak.", "passiveHint": "Passive: +15% scrap drops", "baseStats": { "maxHp": 80, "speed": 190, "attackPower": 14, "defence": 4, "luck": 20, "staminaMax": 100 }, "startingAbility": "dashing-kick", "unlocked": true }

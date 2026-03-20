@@ -1,0 +1,46 @@
+{
+  "tracks": [
+    {
+      "id": "unlockHedgehog",
+      "name": "Sprig's Freedom",
+      "description": "Complete 3 runs to free Sprig the Hedgehog from the MEGACORP work camp.",
+      "condition": { "type": "runs_completed", "value": 3 },
+      "reward": { "type": "unlock_animal", "id": "hedgehog" }
+    },
+    {
+      "id": "unlockToad",
+      "name": "Bogsworth's Bargain",
+      "description": "Defeat BUDDY 9000 once.",
+      "condition": { "type": "flag_set", "flagId": "FIRST_BOSS_DEFEAT" },
+      "reward": { "type": "unlock_animal", "id": "toad" }
+    },
+    {
+      "id": "unlockBadger",
+      "name": "The Iron Pact",
+      "description": "Complete 10 runs.",
+      "condition": { "type": "runs_completed", "value": 10 },
+      "reward": { "type": "unlock_animal", "id": "badger" }
+    },
+    {
+      "id": "unlockOwl",
+      "name": "Professor's Return",
+      "description": "Collect 30 items across all runs.",
+      "condition": { "type": "items_collected", "value": 30 },
+      "reward": { "type": "unlock_animal", "id": "owl" }
+    },
+    {
+      "id": "metaScraps1",
+      "name": "Forest Fund",
+      "description": "Complete 2 runs without dying.",
+      "condition": { "type": "runs_completed", "value": 2 },
+      "reward": { "type": "meta_scraps", "amount": 50 }
+    },
+    {
+      "id": "permSpeed",
+      "name": "Boots of the Grove",
+      "description": "Reach level 5.",
+      "condition": { "type": "flag_set", "flagId": "LEVEL_5_REACHED" },
+      "reward": { "type": "permanent_stat", "stat": "speed", "amount": 10 }
+    }
+  ]
+}

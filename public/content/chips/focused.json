@@ -1,0 +1,1 @@
+{ "id": "focused", "name": "Focused Lens", "description": "Precision optics. +10 attack power, critical hits deal 2× damage.", "tier": "green", "weight": 8, "statModifiers": [{"stat": "attackPower", "type": "add", "value": 10}], "effectId": null }

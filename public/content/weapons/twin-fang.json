@@ -1,0 +1,19 @@
+{
+  "weaponId": "twin-fang",
+  "name": "Twin Fang",
+  "description": "Fires two projectiles in parallel. Consistent tick damage at medium range.",
+  "type": "projectile",
+  "staminaCost": 10,
+  "cooldownMs": 400,
+  "damageMultiplier": 0.8,
+  "projectile": {
+    "speed": 380,
+    "damageType": "physical",
+    "pierceCount": 0,
+    "lifetime": 1600,
+    "scale": 0.6,
+    "tint": 16744448,
+    "projectileCount": 2,
+    "spreadAngle": 0.18
+  }
+}

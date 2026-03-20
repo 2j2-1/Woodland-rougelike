@@ -1,0 +1,1 @@
+{ "id": "corporate-lanyard", "name": "Corporate Lanyard", "description": "A stolen MEGACORP ID badge. Enemies briefly hesitate when they see it.", "type": "passive", "tier": "grey", "weight": 8, "cost": 20, "statModifiers": [{"stat": "speed", "type": "add", "value": 8}], "tags": ["megacorp", "utility"] }

@@ -1,0 +1,1 @@
+{ "id": "corporate-takeover", "name": "Corporate Takeover", "description": "Converts the first enemy in each room into a friendly ally for 30s.", "tier": "red", "weight": 1, "statModifiers": [], "effectId": "corporate-takeover" }

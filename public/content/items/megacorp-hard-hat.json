@@ -1,0 +1,1 @@
+{ "id": "megacorp-hard-hat", "name": "MEGACORP Hard Hat", "description": "Salvaged safety equipment. Reduces headshot damage by 50%.", "type": "passive", "tier": "green", "weight": 8, "cost": 26, "statModifiers": [{"stat": "defence", "type": "add", "value": 4}, {"stat": "maxHp", "type": "add", "value": 10}], "tags": ["defence", "megacorp"] }

@@ -1,0 +1,1 @@
+{ "id": "acorn-hoard", "name": "Acorn Hoard", "description": "A stash of emergency acorns. Restores 15 HP when picked up.", "type": "consumable", "tier": "grey", "weight": 14, "cost": 15, "statModifiers": [], "tags": ["heal", "consumable"], "pickupEffect": "heal_15" }

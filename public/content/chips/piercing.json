@@ -1,0 +1,1 @@
+{ "id": "piercing", "name": "Piercing Round", "description": "Projectiles pass through the first enemy they hit.", "tier": "green", "weight": 7, "statModifiers": [], "effectId": "piercing" }

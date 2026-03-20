@@ -1,0 +1,53 @@
+{
+  "achievements": [
+    {
+      "id": "first_blood",
+      "name": "First Blood",
+      "description": "Defeat your first enemy.",
+      "condition": { "type": "kills", "value": 1 },
+      "icon": "🗡️"
+    },
+    {
+      "id": "ten_kills",
+      "name": "Pest Control",
+      "description": "Defeat 10 enemies.",
+      "condition": { "type": "kills", "value": 10 },
+      "icon": "⚔️"
+    },
+    {
+      "id": "hundred_kills",
+      "name": "Exterminator",
+      "description": "Defeat 100 enemies total.",
+      "condition": { "type": "kills", "value": 100 },
+      "icon": "💀"
+    },
+    {
+      "id": "first_run",
+      "name": "Brave Steps",
+      "description": "Complete your first run.",
+      "condition": { "type": "runs_completed", "value": 1 },
+      "icon": "🌿"
+    },
+    {
+      "id": "five_runs",
+      "name": "Seasoned Adventurer",
+      "description": "Complete 5 runs.",
+      "condition": { "type": "runs_completed", "value": 5 },
+      "icon": "🎒"
+    },
+    {
+      "id": "boss_slayer",
+      "name": "Reprogrammer",
+      "description": "Defeat BUDDY 9000.",
+      "condition": { "type": "flag_set", "flagId": "FIRST_BOSS_DEFEAT" },
+      "icon": "🤖"
+    },
+    {
+      "id": "collector",
+      "name": "Hoarder",
+      "description": "Collect 50 items across all runs.",
+      "condition": { "type": "items_collected", "value": 50 },
+      "icon": "🎁"
+    }
+  ]
+}

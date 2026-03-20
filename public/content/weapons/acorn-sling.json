@@ -1,0 +1,17 @@
+{
+  "weaponId": "acorn-sling",
+  "name": "Acorn Sling",
+  "description": "A reliable short-range sling that fires acorns at medium speed. Great for kiting enemies.",
+  "type": "projectile",
+  "staminaCost": 8,
+  "cooldownMs": 350,
+  "damageMultiplier": 0.9,
+  "projectile": {
+    "speed": 340,
+    "damageType": "physical",
+    "pierceCount": 0,
+    "lifetime": 1800,
+    "scale": 0.7,
+    "tint": 16750592
+  }
+}

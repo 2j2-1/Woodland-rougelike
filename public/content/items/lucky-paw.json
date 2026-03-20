@@ -1,0 +1,1 @@
+{ "id": "lucky-paw", "name": "Lucky Paw", "description": "A preserved lucky paw. Improves your fortune considerably.", "type": "trinket", "tier": "grey", "weight": 8, "cost": 20, "statModifiers": [{"stat": "Luck", "type": "add", "value": 20}], "tags": ["luck"] }

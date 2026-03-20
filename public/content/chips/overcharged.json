@@ -1,0 +1,1 @@
+{ "id": "overcharged", "name": "Overcharged", "description": "Doubles attack power but halves max HP. Go big or go home.", "tier": "red", "weight": 1, "statModifiers": [{"stat": "attackPower", "type": "multiply", "value": 2.0}, {"stat": "maxHp", "type": "multiply", "value": 0.5}], "effectId": null }

@@ -1,0 +1,1 @@
+{ "id": "four-leaf-clover", "name": "Four-Leaf Clover", "description": "Increases the luck stat significantly, improving item drops.", "type": "passive", "tier": "green", "weight": 10, "cost": 25, "statModifiers": [{"stat": "luck", "type": "add", "value": 18}], "tags": ["luck"] }

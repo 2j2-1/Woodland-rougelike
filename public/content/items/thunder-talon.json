@@ -1,0 +1,1 @@
+{ "id": "thunder-talon", "name": "Thunder Talon", "description": "Electric claws that chain lightning to nearby enemies.", "type": "weapon", "tier": "gold", "weight": 4, "cost": 55, "statModifiers": [{"stat": "attackPower", "type": "add", "value": 14}], "tags": ["melee", "electric", "chain"] }

@@ -1,0 +1,1 @@
+{ "id": "mushroom-brew", "name": "Mushroom Brew", "description": "A strange brew. Boosts all stats for 20 seconds but causes mild confusion.", "type": "consumable", "tier": "red", "weight": 2, "cost": 70, "statModifiers": [], "tags": ["consumable", "buff", "rare"], "pickupEffect": "mushroom_brew_effect" }

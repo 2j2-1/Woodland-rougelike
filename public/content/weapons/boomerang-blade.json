@@ -1,0 +1,19 @@
+{
+  "weaponId": "boomerang-blade",
+  "name": "Boomerang Blade",
+  "description": "A heavy blade that bounces off walls and through enemies. Rewards tight rooms.",
+  "type": "projectile",
+  "staminaCost": 15,
+  "cooldownMs": 700,
+  "damageMultiplier": 1.8,
+  "projectile": {
+    "speed": 200,
+    "damageType": "physical",
+    "pierceCount": 2,
+    "lifetime": 3500,
+    "scale": 1.1,
+    "tint": 16763904,
+    "bouncing": true,
+    "bounceCount": 3
+  }
+}

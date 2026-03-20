@@ -1,0 +1,1 @@
+{ "id": "owl", "name": "Professor Mosswick", "description": "A wise old owl with limited stamina but devastating precision strikes.", "passiveHint": "Passive: Precision — every 5th attack deals 2× damage", "baseStats": { "maxHp": 70, "speed": 140, "attackPower": 28, "defence": 6, "luck": 15, "staminaMax": 70 }, "startingAbility": "dashing-kick", "unlocked": false }

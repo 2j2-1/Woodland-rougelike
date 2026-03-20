@@ -1,0 +1,1 @@
+{ "id": "overclock", "name": "Overclock", "description": "Push your systems past their limits: +30% attack speed, +20% move speed.", "tier": "gold", "weight": 4, "statModifiers": [{"stat": "speed", "type": "multiply", "value": 1.2}, {"stat": "attackPower", "type": "multiply", "value": 1.15}], "effectId": "overclock" }

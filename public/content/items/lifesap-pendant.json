@@ -1,0 +1,1 @@
+{ "id": "lifesap-pendant", "name": "Lifesap Pendant", "description": "Corrupted amber that siphons life from every hit.", "type": "trinket", "tier": "green", "weight": 6, "cost": 28, "statModifiers": [], "effectId": "lifesteal", "tags": ["heal", "combat"] }

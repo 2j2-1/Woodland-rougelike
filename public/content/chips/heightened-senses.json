@@ -1,0 +1,1 @@
+{ "id": "heightened-senses", "name": "Heightened Senses", "description": "+15 luck, +30 detection range (player sees further in minimap).", "tier": "green", "weight": 7, "statModifiers": [{"stat": "luck", "type": "add", "value": 15}], "effectId": null }

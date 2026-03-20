@@ -1,0 +1,1 @@
+{ "id": "nimble", "name": "Nimble Actuators", "description": "Lightweight servos. +25 speed.", "tier": "grey", "weight": 12, "statModifiers": [{"stat": "speed", "type": "add", "value": 25}], "effectId": null }

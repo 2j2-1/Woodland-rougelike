@@ -1,0 +1,1 @@
+{ "id": "stolen-keycard", "name": "Stolen Keycard", "description": "Opens locked MEGACORP caches. Occasionally drops extra chips.", "type": "passive", "tier": "grey", "weight": 9, "cost": 22, "statModifiers": [], "tags": ["utility", "megacorp"], "pickupEffect": "key_card_effect" }

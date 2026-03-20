@@ -1,0 +1,1 @@
+{ "id": "iron-lung", "name": "Iron Lung", "description": "Deep breaths give you deeper stamina reserves.", "type": "trinket", "tier": "grey", "weight": 9, "cost": 18, "statModifiers": [{"stat": "MaxStamina", "type": "add", "value": 35}], "tags": ["stamina"] }

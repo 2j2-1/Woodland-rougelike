@@ -1,0 +1,1 @@
+{ "id": "bark-vest", "name": "Bark Vest", "description": "Tough bark armour that reduces incoming damage.", "type": "passive", "tier": "grey", "weight": 11, "cost": 20, "statModifiers": [{"stat": "defence", "type": "add", "value": 6}], "tags": ["defence", "armour"] }

@@ -1,0 +1,29 @@
+{
+  "npcId": "humphrey",
+  "nodes": [
+    {
+      "nodeId": "humphrey_intro",
+      "priority": 0,
+      "conditions": [],
+      "speakerId": "Humphrey",
+      "text": "Step right up! Humphrey's Emporium of Fine Salvage is open for business! I've got weapons, armour, suspicious consumables — all priced to shift before MEGACORP finds me here.",
+      "nextNodeId": null
+    },
+    {
+      "nodeId": "humphrey_broke",
+      "priority": 5,
+      "conditions": ["HUMPHREY_VISIT_2"],
+      "speakerId": "Humphrey",
+      "text": "Back again! Hopefully with a bit more scrap this time. I'm not running a charity — well, I am, technically, but don't tell anyone.",
+      "nextNodeId": null
+    },
+    {
+      "nodeId": "humphrey_post_boss",
+      "priority": 50,
+      "conditions": ["FIRST_BOSS_DEFEAT"],
+      "speakerId": "Humphrey",
+      "text": "BUDDY 9000 is offline?! Do you know what this means? MEGACORP's supply drones will be confused for at least a week! Stock up while you can!",
+      "nextNodeId": null
+    }
+  ]
+}

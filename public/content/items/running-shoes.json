@@ -1,0 +1,1 @@
+{ "id": "running-shoes", "name": "Running Shoes", "description": "Your feet move faster than your brain.", "type": "trinket", "tier": "grey", "weight": 9, "cost": 18, "statModifiers": [{"stat": "Speed", "type": "add", "value": 20}], "tags": ["speed"] }

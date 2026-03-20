@@ -1,0 +1,19 @@
+{
+  "id": "test-room",
+  "name": "Patrol Corridor",
+  "width": 20,
+  "height": 15,
+  "tileSize": 32,
+  "spawnPoints": [
+    { "x": 200, "y": 200, "enemyId": "robo-pheasant-mk1", "waveNumber": 1 },
+    { "x": 500, "y": 200, "enemyId": "robo-pheasant-mk1", "waveNumber": 1 },
+    { "x": 350, "y": 350, "enemyId": "badger-bot-3000",  "waveNumber": 2 }
+  ],
+  "exits": [
+    { "direction": "north", "targetRoom": null },
+    { "direction": "east",  "targetRoom": null }
+  ],
+  "features": [],
+  "hasChipTerminal": true,
+  "hasBlacksmith": false
+}

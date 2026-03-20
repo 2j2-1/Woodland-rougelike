@@ -1,0 +1,1 @@
+{ "id": "foxfire-wand", "name": "Foxfire Wand", "description": "A magical wand that fires homing wisps of foxfire.", "type": "weapon", "tier": "gold", "weight": 3, "cost": 60, "statModifiers": [{"stat": "attackPower", "type": "add", "value": 11}, {"stat": "luck", "type": "add", "value": 5}], "tags": ["ranged", "magic", "homing"] }

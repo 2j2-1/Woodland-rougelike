@@ -1,0 +1,1 @@
+{ "id": "mud-camouflage", "name": "Mud Camouflage", "description": "Smear on some mud to reduce enemy detection range by 30%.", "type": "passive", "tier": "grey", "weight": 11, "cost": 16, "statModifiers": [], "tags": ["stealth", "utility"] }

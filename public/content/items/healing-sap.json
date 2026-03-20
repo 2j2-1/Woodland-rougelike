@@ -1,0 +1,1 @@
+{ "id": "healing-sap", "name": "Healing Sap", "description": "A vial of forest sap. Restores 30 HP when used.", "type": "consumable", "tier": "grey", "weight": 13, "cost": 18, "statModifiers": [], "tags": ["heal", "consumable"], "pickupEffect": "heal_30" }

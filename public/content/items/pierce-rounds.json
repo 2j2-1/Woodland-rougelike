@@ -1,0 +1,1 @@
+{ "id": "pierce-rounds", "name": "Pierce Rounds", "description": "Sharpened core ammunition. Your projectiles pierce through one extra enemy.", "type": "trinket", "tier": "green", "weight": 6, "cost": 25, "statModifiers": [], "effectId": "weapon_upgrade_pierce", "tags": ["weapon", "upgrade"] }

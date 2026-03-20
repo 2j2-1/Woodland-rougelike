@@ -1,0 +1,19 @@
+{
+  "weaponId": "bramble-burst",
+  "name": "Bramble Burst",
+  "description": "Unleashes a wide cloud of poison thorns. Deadly at close range.",
+  "type": "projectile",
+  "staminaCost": 20,
+  "cooldownMs": 1100,
+  "damageMultiplier": 0.7,
+  "projectile": {
+    "speed": 220,
+    "damageType": "poison",
+    "pierceCount": 1,
+    "lifetime": 900,
+    "scale": 0.65,
+    "tint": 4456448,
+    "projectileCount": 8,
+    "spreadAngle": 1.8
+  }
+}

@@ -1,0 +1,1 @@
+{ "id": "efficiency", "name": "Efficiency Module", "description": "Reduces stamina cost of all actions by 20%.", "tier": "green", "weight": 8, "statModifiers": [{"stat": "staminaMax", "type": "add", "value": 15}], "effectId": "efficiency" }

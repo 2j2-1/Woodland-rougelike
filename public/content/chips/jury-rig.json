@@ -1,0 +1,1 @@
+{ "id": "jury-rig", "name": "Jury-Rig", "description": "Heal 5 HP every time you pick up scrap.", "tier": "gold", "weight": 3, "statModifiers": [], "effectId": "jury-rig" }

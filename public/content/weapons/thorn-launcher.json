@@ -1,0 +1,17 @@
+{
+  "weaponId": "thorn-launcher",
+  "name": "Thorn Launcher",
+  "description": "Launches heavy thorns that pierce through multiple enemies. Slow fire rate but high damage.",
+  "type": "projectile",
+  "staminaCost": 18,
+  "cooldownMs": 750,
+  "damageMultiplier": 1.6,
+  "projectile": {
+    "speed": 260,
+    "damageType": "physical",
+    "pierceCount": 2,
+    "lifetime": 2500,
+    "scale": 1.0,
+    "tint": 5570560
+  }
+}

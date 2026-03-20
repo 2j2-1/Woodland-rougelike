@@ -1,0 +1,1 @@
+{ "id": "regen-moss", "name": "Regen Moss", "description": "Living forest moss that slowly regenerates your health over time.", "type": "trinket", "tier": "green", "weight": 7, "cost": 24, "statModifiers": [], "effectId": "regen", "tags": ["heal", "passive"] }

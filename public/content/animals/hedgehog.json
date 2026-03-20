@@ -1,0 +1,1 @@
+{ "id": "hedgehog", "name": "Sprig the Hedgehog", "description": "A spiny defender who reflects damage back at attackers.", "passiveHint": "Passive: Thorns — deal 3 damage to melee attackers", "baseStats": { "maxHp": 90, "speed": 155, "attackPower": 12, "defence": 10, "luck": 10, "staminaMax": 90 }, "startingAbility": "dashing-kick", "unlocked": false }

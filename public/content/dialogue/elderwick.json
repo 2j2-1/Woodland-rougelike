@@ -1,0 +1,45 @@
+{
+  "npcId": "elderwick",
+  "nodes": [
+    {
+      "nodeId": "elderwick_intro",
+      "priority": 0,
+      "conditions": [],
+      "speakerId": "Elder Wick",
+      "text": "Ah... another soul stirred from slumber by the grinding of MEGACORP's machines. Welcome to what remains of The Great Oak, young one. We are few, but we are not yet broken.",
+      "nextNodeId": "elderwick_intro_2"
+    },
+    {
+      "nodeId": "elderwick_intro_2",
+      "priority": 0,
+      "conditions": [],
+      "speakerId": "Elder Wick",
+      "text": "Circuit Grove lies beyond that rusted gate. MEGACORP has been drilling there for months. I fear they have found... something. Something old. You must venture in when you are ready.",
+      "nextNodeId": null
+    },
+    {
+      "nodeId": "elderwick_after_first_run",
+      "priority": 10,
+      "conditions": ["FIRST_RUN_COMPLETE"],
+      "speakerId": "Elder Wick",
+      "text": "You returned. Good. The Grove is vast — and its dangers are many. Each time you venture in you will learn more of its patterns. Do not be discouraged by setbacks.",
+      "nextNodeId": null
+    },
+    {
+      "nodeId": "elderwick_boss_hint",
+      "priority": 20,
+      "conditions": ["FOUND_BUDDY_POSTER"],
+      "speakerId": "Elder Wick",
+      "text": "That poster... BUDDY 9000. Their so-called 'Customer Relations Executive'. Do not be fooled by the smile painted on that chassis. It is corporate violence wearing a friendly face.",
+      "nextNodeId": null
+    },
+    {
+      "nodeId": "elderwick_post_boss",
+      "priority": 100,
+      "conditions": ["FIRST_BOSS_DEFEAT"],
+      "speakerId": "Elder Wick",
+      "text": "You did it. BUDDY has been... reprogrammed, shall we say. But MEGACORP will send more. This is a battle, not a war. Rest here. The Grove will need you again.",
+      "nextNodeId": null
+    }
+  ]
+}

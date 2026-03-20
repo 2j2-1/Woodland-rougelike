@@ -1,0 +1,1 @@
+{ "id": "homing-chip", "name": "Homing Chip", "description": "A tracking microchip. Your projectiles slightly arc towards enemies.", "type": "trinket", "tier": "green", "weight": 5, "cost": 30, "statModifiers": [], "effectId": "weapon_upgrade_homing", "tags": ["weapon", "upgrade"] }

@@ -1,0 +1,1 @@
+{ "id": "momentum", "name": "Momentum Chip", "description": "Increases speed by 5% for every 10 enemies killed this run (max 50%).", "tier": "green", "weight": 6, "statModifiers": [], "effectId": "momentum" }

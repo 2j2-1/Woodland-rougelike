@@ -1,0 +1,16 @@
+{
+  "id": "shadow-vole",
+  "name": "Shadow Vole",
+  "description": "A swift creature coated in toxic spores. Closes distance deceptively fast.",
+  "hp": 20,
+  "defence": 0,
+  "speed": 165,
+  "attackDamage": 10,
+  "attackRange": 28,
+  "detectionRange": 200,
+  "behaviour": "melee-brawler",
+  "lootTable": [
+    { "itemId": "scrap", "chance": 1.0, "count": [2, 5] }
+  ],
+  "expValue": 8
+}

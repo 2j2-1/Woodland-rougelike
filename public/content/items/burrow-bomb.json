@@ -1,0 +1,1 @@
+{ "id": "burrow-bomb", "name": "Burrow Bomb", "description": "A bomb that detonates beneath an enemy. High damage, medium range.", "type": "active", "tier": "green", "weight": 6, "cost": 30, "statModifiers": [], "tags": ["explosive", "active"] }

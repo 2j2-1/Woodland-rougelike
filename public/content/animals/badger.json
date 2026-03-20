@@ -1,0 +1,1 @@
+{ "id": "badger", "name": "Grimshaw the Badger", "description": "A slow but ferocious brawler with immense stamina.", "passiveHint": "Passive: Berserk — damage increases as HP drops", "baseStats": { "maxHp": 130, "speed": 120, "attackPower": 22, "defence": 12, "luck": 6, "staminaMax": 130 }, "startingAbility": "dashing-kick", "unlocked": false }

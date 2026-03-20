@@ -1,0 +1,1 @@
+{ "id": "smoke-bomb", "name": "Smoke Bomb", "description": "Creates a cloud that blinds enemies for 3 seconds.", "type": "active", "tier": "grey", "weight": 9, "cost": 20, "statModifiers": [], "tags": ["utility", "active", "blind"] }

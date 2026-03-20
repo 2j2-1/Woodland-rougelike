@@ -1,0 +1,17 @@
+{
+  "id": "bramble-golem",
+  "name": "Bramble Golem",
+  "description": "A hulking amalgam of branches and rusted metal. Slow but relentless.",
+  "hp": 90,
+  "defence": 15,
+  "speed": 55,
+  "attackDamage": 22,
+  "attackRange": 45,
+  "detectionRange": 140,
+  "behaviour": "melee-brawler",
+  "lootTable": [
+    { "itemId": "scrap", "chance": 1.0, "count": [8, 16] },
+    { "itemId": "bark-vest", "chance": 0.08, "count": [1, 1] }
+  ],
+  "expValue": 25
+}

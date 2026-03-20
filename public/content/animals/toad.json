@@ -1,0 +1,1 @@
+{ "id": "toad", "name": "Bogsworth the Toad", "description": "A slimy amphibian who can poison enemies and leap great distances.", "passiveHint": "Passive: Attacks apply 2-stack poison", "baseStats": { "maxHp": 85, "speed": 160, "attackPower": 16, "defence": 5, "luck": 12, "staminaMax": 110 }, "startingAbility": "dashing-kick", "unlocked": false }

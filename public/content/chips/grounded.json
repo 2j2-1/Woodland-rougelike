@@ -1,0 +1,1 @@
+{ "id": "grounded", "name": "Grounding Wire", "description": "Reduces electric damage taken by 60%.", "tier": "grey", "weight": 10, "statModifiers": [], "effectId": "grounded" }

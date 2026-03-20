@@ -1,0 +1,1 @@
+{ "id": "reinforced-heart", "name": "Reinforced Heart", "description": "A mechanical implant that increases your maximum health.", "type": "armour", "tier": "green", "weight": 8, "cost": 22, "statModifiers": [{"stat": "MaxHP", "type": "add", "value": 25}], "tags": ["health", "armour"] }

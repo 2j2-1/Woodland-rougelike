@@ -1,0 +1,17 @@
+{
+  "id": "boss-room",
+  "name": "MEGACORP Executive Suite",
+  "width": 30,
+  "height": 25,
+  "tileSize": 32,
+  "spawnPoints": [
+    { "x": 480, "y": 400, "enemyId": "buddy-boss", "waveNumber": 1 }
+  ],
+  "exits": [
+    { "direction": "south", "targetRoom": null }
+  ],
+  "features": ["sealed_doors"],
+  "hasChipTerminal": false,
+  "hasBlacksmith": false,
+  "isBossRoom": true
+}

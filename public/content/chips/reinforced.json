@@ -1,0 +1,1 @@
+{ "id": "reinforced", "name": "Reinforced Plating", "description": "Heavy armour plating. +8 defence, -10 speed.", "tier": "grey", "weight": 12, "statModifiers": [{"stat": "defence", "type": "add", "value": 8}, {"stat": "speed", "type": "add", "value": -10}], "effectId": null }

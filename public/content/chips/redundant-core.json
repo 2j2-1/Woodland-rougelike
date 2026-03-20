@@ -1,0 +1,1 @@
+{ "id": "redundant-core", "name": "Redundant Core", "description": "A backup system that heals 2 HP/s while below 50% health.", "tier": "gold", "weight": 4, "statModifiers": [{"stat": "maxHp", "type": "add", "value": 15}], "effectId": "redundant-core" }

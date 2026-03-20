@@ -1,0 +1,1 @@
+{ "id": "thorn-launcher", "name": "Thorn Launcher", "description": "Fires a burst of piercing thorns in a spread pattern.", "type": "weapon", "tier": "green", "weight": 6, "cost": 32, "statModifiers": [{"stat": "attackPower", "type": "add", "value": 7}], "tags": ["ranged", "spread", "pierce"] }

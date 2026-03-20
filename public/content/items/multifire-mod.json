@@ -1,0 +1,1 @@
+{ "id": "multifire-mod", "name": "Multi-Fire Mod", "description": "A chaotic circuit board. Your weapons fire an extra projectile.", "type": "trinket", "tier": "green", "weight": 6, "cost": 26, "statModifiers": [], "effectId": "weapon_upgrade_multifire", "tags": ["weapon", "upgrade"] }
